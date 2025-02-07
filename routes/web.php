@@ -17,10 +17,7 @@ use App\Http\Controllers\FrontendController;
 Route::get('/',function(){
     return view ('frontend.index');
 });
-//route123
-Route::get('/shopp',function(){
-    return view ('frontend.index');
-});
+
 //  Backend
 Route::prefix('admin')->group(function () {
     Route::get('/', [BackendController::class, 'index'])->name('backend.index');
