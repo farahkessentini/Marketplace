@@ -14,8 +14,10 @@ use App\Http\Controllers\FrontendController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-
+Route::get('/',function(){
+    return view ('frontend.index');
+});
+//route
 
 //  Backend
 Route::prefix('admin')->group(function () {
